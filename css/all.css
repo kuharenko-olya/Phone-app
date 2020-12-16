@@ -1,0 +1,21 @@
+.wrapper{
+    width: 230px;
+    height: 455px;
+    background: grey;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 27px;
+}
+
+#phone{
+    position: relative;
+}
+
+.side-button{
+    position: absolute;
+    top: 250px;
+    left: 750px;
+    width: 18px;
+    height: 70px;
+    border-radius:60px;
+}
