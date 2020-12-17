@@ -9,6 +9,7 @@
 
 #phone{
     position: relative;
+    z-index: 2;
 }
 
 .side-button{
@@ -18,4 +19,17 @@
     width: 18px;
     height: 70px;
     border-radius:60px;
+    z-index: 1;
 }
+
+.display{
+    background-color: black;
+    height: 445px;
+    width: 218px;
+    margin: 0 auto;
+    border-radius: 27px;
+    position: absolute;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
