@@ -33,3 +33,36 @@
     margin-top: 5px;
 }
 
+.menu-button{
+    position: absolute;
+    width: 47px;
+    height: 44px;
+    top: 461px;
+    left: 620px;
+    z-index: 2;
+    border-radius: 30px;
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding: 0 10px;
+    width: 195px;
+}
+
+.menu-item{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.icon{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    color: lightblue;
+    cursor: pointer;
+}
