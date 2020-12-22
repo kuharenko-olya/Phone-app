@@ -1,6 +1,6 @@
 export default {
-    name: "Change",
-    icon: "fas fa-hippo",
+    name: "Book",
+    icon: "fas fa-book",
     program: function () {
     }
 }

@@ -1,6 +1,6 @@
 export default {
-    name: "Change",
-    icon: "fas fa-hippo",
+    name: "Round",
+    icon: "far fa-circle",
     program: function () {
     }
 }

@@ -1,7 +1,6 @@
-
 export default {
-    name: "Like",
-    icon: "far fa-heart",
+    name: "Input",
+    icon: "far fa-square",
     program: function () {
         alert("Like")
     }

@@ -1,6 +1,6 @@
 export default {
-    name: "Change",
-    icon: "fas fa-hippo",
+    name: "Diamond",
+    icon: "far fa-gem",
     program: function () {
     }
 }
