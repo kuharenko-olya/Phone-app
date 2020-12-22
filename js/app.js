@@ -20,14 +20,14 @@ let menuButton = document.querySelector('.menu-button');
 
 let apps = { // applications
     like_app: Like,
-    input_app: Input,
-    star_app: Star,
-    round_app: Round,
-    whatsap_app: Whatsapp,
-    diamond_app: Diamond,
-    adn_app: Adn,
-    book_app: Book,
-    background_app: Background,
+    // input_app: Input,
+    // star_app: Star,
+    // round_app: Round,
+    // whatsap_app: Whatsapp,
+    // diamond_app: Diamond,
+    // adn_app: Adn,
+    // book_app: Book,
+    // background_app: Background,
 }
 
 console.log(apps);
@@ -37,7 +37,7 @@ console.log(apps);
 let enabled = false;
 
 sideButton.addEventListener('click', toogleDisplay);
-menuButton.addEventListener('click', toogleDisplay);
+menuButton.addEventListener('click', enableDisplay);
 
 
 function toogleDisplay() {
@@ -57,8 +57,8 @@ function enableDisplay() {
 
     const html = buildMenu();
     display.innerHTML = html;
-    setCallbacks();
 
+    setCallbacks();
 
     console.log('показываю экран');
 }
@@ -66,7 +66,7 @@ function enableDisplay() {
 function setCallbacks() {
     Object.keys(apps).map(app_key => { // app_key = like_app
         let app = apps[app_key] // Получение конкретного приложения(по app_key)
-        document.getElementById(app_key).onclick = app.program;
+        app.initialize(app_key); // инициализируем приложение
     });
 }
 
@@ -79,8 +79,8 @@ function buildMenu() {
     applications.map(app_key => { // app_key = like_app
         let app = apps[app_key] // Получение конкретного приложения(по app_key)
         content +=
-            "<div class='menu-item'><i id='" + app_key + "' class='" + app.icon + "'></i>"
-            + '<span class="name-app">' + app.name + '</span>' + '</div>'
+            "<div class='menu-item' id='" + app_key + "'><i class='" + app.icon + "'></i>"
+            + '<span class="name-app">' + app.name + '</span></div>'
     });
 
 
@@ -96,4 +96,5 @@ function disableDisplay() {
     display.innerHTML = "";
     console.log('скрываю экран');
 }
+
 
